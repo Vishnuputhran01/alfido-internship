@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfido Tech Internship | Azure Deployment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-cloud"></i>
+                <span>AzureIntern</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#task">Task</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Cloud Computing Internship</h1>
+                <h2>Alfido Tech - Task 1 Submission</h2>
+                <p>Deploying static website on Microsoft Azure Static Web Apps</p>
+                
+                <div class="tech-badges">
+                    <span class="badge azure"><i class="fab fa-microsoft"></i> Azure</span>
+                    <span class="badge html"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="badge css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="badge js"><i class="fab fa-js"></i> JavaScript</span>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#task" class="btn btn-primary">
+                        <i class="fas fa-tasks"></i> View Task
+                    </a>
+                    <a href="https://azure.microsoft.com/en-us/services/app-service/static/" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> Azure Docs
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="cloud-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task Section -->
+    <section class="task-section" id="task">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-check-circle"></i> Task 1 Completed</h2>
+            <p class="section-subtitle">Static Website Deployment on Cloud Storage</p>
+            
+            <div class="task-card">
+                <div class="task-header">
+                    <h3>Requirements Fulfilled</h3>
+                    <span class="status completed">COMPLETED</span>
+                </div>
+                
+                <div class="requirements">
+                    <div class="req-item">
+                        <i class="fas fa-check"></i>
+                        <span>Created storage container on Azure</span>
+                    </div>
+                    <div class="req-item">
+                        <i class="fas fa-check"></i>
+                        <span>Enabled static website hosting</span>
+                    </div>
+                    <div class="req-item">
+                        <i class="fas fa-check"></i>
+                        <span>Uploaded HTML/CSS files</span>
+                    </div>
+                    <div class="req-item">
+                        <i class="fas fa-check"></i>
+                        <span>Configured public access permissions</span>
+                    </div>
+                    <div class="req-item">
+                        <i class="fas fa-check"></i>
+                        <span>Accessed via public URL</span>
+                    </div>
+                </div>
+                
+                <div class="deployment-info">
+                    <h4><i class="fas fa-globe"></i> Deployment Details</h4>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Platform:</span>
+                            <span class="info-value">Microsoft Azure</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Service:</span>
+                            <span class="info-value">Static Web Apps</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Tier:</span>
+                            <span class="info-value">Free (No credit card)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">SSL:</span>
+                            <span class="info-value">Enabled</span>
+                        </div>
+                    </div>
+                    
+                    <div class="url-box">
+                        <span class="url-label">Live Website URL:</span>
+                        <div class="url-display" id="websiteUrl">
+                            https://your-app.azurestaticapps.net
+                        </div>
+                        <button class="btn-copy" onclick="copyUrl()">
+                            <i class="far fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-user-graduate"></i> About This Project</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This website is deployed as part of my <strong>Cloud Computing Internship</strong> at <strong>Alfido Tech</strong>. The goal is to demonstrate practical skills in cloud deployment using Microsoft Azure.</p>
+                    
+                    <h4>Key Learning Objectives:</h4>
+                    <ul>
+                        <li>Understanding cloud storage concepts</li>
+                        <li>Static website hosting on Azure</li>
+                        <li>Public access configuration</li>
+                        <li>HTTPS and security implementation</li>
+                        <li>Free tier resource management</li>
+                    </ul>
+                    
+                    <h4>Technologies Used:</h4>
+                    <div class="tech-stack">
+                        <div class="tech">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech">
+                            <i class="fab fa-azure"></i>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>100+</h3>
+                        <p>Lines of Code</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>2</h3>
+                        <p>Hours to Deploy</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>$0</h3>
+                        <p>Cost (Free Tier)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Information</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <h4>Intern Name</h4>
+                        <p>Cloud Computing Intern</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-building"></i>
+                    <div>
+                        <h4>Alfido Tech</h4>
+                        <p>Cloud Computing Department</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-calendar"></i>
+                    <div>
+                        <h4>Internship Period</h4>
+                        <p>December 2024 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo">
+                        <i class="fas fa-cloud"></i>
+                        <span>AzureIntern</span>
+                    </div>
+                    <p>Cloud Computing Internship Portfolio</p>
+                </div>
+                
+                <div class="footer-right">
+                    <p>Deployed on Microsoft Azure Static Web Apps</p>
+                    <p>Free Tier - No Credit Card Required</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alfido Tech Internship Program. All rights reserved.</p>
+                <p>Task 1: Static Website Deployment | Cloud Computing Track</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Update deployment date
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateElement = document.createElement('p');
+            dateElement.innerHTML = `<i class="fas fa-calendar-check"></i> Deployed on: ${new Date().toLocaleDateString()}`;
+            document.querySelector('.deployment-info').appendChild(dateElement);
+            
+            // Update URL with actual location
+            document.getElementById('websiteUrl').textContent = window.location.hostname;
+        });
+        
+        // Copy URL function
+        function copyUrl() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('URL copied to clipboard!');
+            });
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
